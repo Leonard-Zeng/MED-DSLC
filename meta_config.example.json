@@ -1,0 +1,25 @@
+{
+  "domains": [
+    "caltech101",
+    "eurosat",
+    "stanford_cars",
+    "food101",
+    "oxford_pets",
+    "oxford_flowers",
+    "dtd",
+    "ucf101",
+    "fgvc"
+  ],
+  "expert_weights": {
+    "caltech101": "./output-rank2/base_split/vitb16/caltech101/16shots/seed1/lora_weights.pt",
+    "eurosat": "./output-rank2/base_split/vitb16/eurosat/16shots/seed1/lora_weights.pt",
+    "stanford_cars": "./output-rank2/base_split/vitb16/stanford_cars/16shots/seed1/lora_weights.pt",
+    "food101": "./output-rank2/base_split/vitb16/food101/16shots/seed1/lora_weights.pt",
+    "oxford_pets": "./output-rank2/base_split/vitb16/oxford_pets/16shots/seed1/lora_weights.pt",
+    "oxford_flowers": "./output-rank2/base_split/vitb16/oxford_flowers/16shots/seed1/lora_weights.pt",
+    "dtd": "./output-rank2/base_split/vitb16/dtd/16shots/seed1/lora_weights.pt",
+    "ucf101": "./output-rank2/base_split/vitb16/ucf101/16shots/seed1/lora_weights.pt",
+    "fgvc": "./output-rank2/base_split/vitb16/fgvc/16shots/seed1/lora_weights.pt"
+  },
+  "meta_weight_path": "./final_weights/MED_standard"
+}

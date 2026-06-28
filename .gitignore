@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# IDE / OS
+.cursor/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Packaging / build
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Local data and generated artifacts
+/data/
+/output/
+/output-rank2/
+/final_weights/
+/final_results/
+/training/weights/
+/training/logs/
+
+# Run artifacts
+*.log
+*.csv
+heatmaps/
+wrongly_classified_*/
+prompts_*.txt
+
+# Notebooks
+.ipynb_checkpoints/
+*.ipynb

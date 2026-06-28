@@ -1,0 +1,129 @@
+{
+  "groups": [
+    {
+      "group_id": "caltech_car_side_alias",
+      "type": "direct_equivalent",
+      "canonical": {"domain": "caltech101", "classname": "car_side"},
+      "members": [
+        {"domain": "caltech101", "classname": "car_side"},
+        {"domain": "caltech101", "classname": "carside"}
+      ],
+      "partial_credit": 1.0
+    },
+    {
+      "group_id": "pasture_semantic",
+      "type": "semantic_equivalent",
+      "members": [
+        {"domain": "eurosat", "classname": "pasture"},
+        {"domain": "resisc45", "classname": "Pasture Land"}
+      ],
+      "partial_credit": 0.5
+    },
+    {
+      "group_id": "highway_semantic",
+      "type": "semantic_equivalent",
+      "members": [
+        {"domain": "ucf101", "classname": "highway"},
+        {"domain": "resisc45", "classname": "Highway or Road"}
+      ],
+      "partial_credit": 0.5
+    },
+    {
+      "group_id": "basketball_semantic",
+      "type": "semantic_equivalent",
+      "members": [
+        {"domain": "ucf101", "classname": "Basketball"},
+        {"domain": "ucf101", "classname": "basketball_court"},
+        {"domain": "resisc45", "classname": "outdoor basketball_court"}
+      ],
+      "partial_credit": 0.5
+    },
+    {
+      "group_id": "bowling_semantic",
+      "type": "semantic_equivalent",
+      "members": [
+        {"domain": "ucf101", "classname": "Bowling"},
+        {"domain": "sun397", "classname": "bowling_alley"}
+      ],
+      "partial_credit": 0.5
+    },
+    {
+      "group_id": "cliff_semantic",
+      "type": "semantic_equivalent",
+      "members": [
+        {"domain": "sun397", "classname": "cliff"},
+        {"domain": "ucf101", "classname": "Cliff_Diving"}
+      ],
+      "partial_credit": 0.5
+    },
+    {
+      "group_id": "pizza_tossing_to_pizza",
+      "type": "semantic_equivalent",
+      "members": [
+        {"domain": "ucf101", "classname": "Pizza_Tossing"},
+        {"domain": "food101", "classname": "pizza"},
+        {"domain": "caltech101", "classname": "pizza"}
+      ],
+      "directional": true,
+      "partial_credit": 0.5
+    },
+    {
+      "group_id": "car_side_to_stanford_models",
+      "type": "generic_to_fine",
+      "generic_members": [
+        {"domain": "caltech101", "classname": "car_side"},
+        {"domain": "caltech101", "classname": "carside"}
+      ],
+      "members": [
+        {"domain": "stanford_cars", "classname": "*"}
+      ],
+      "partial_credit": 0.5
+    },
+    {
+      "group_id": "airplane_to_fgvc_variants",
+      "type": "generic_to_fine",
+      "generic_members": [
+        {"domain": "caltech101", "classname": "airplane"}
+      ],
+      "members": [
+        {"domain": "fgvc", "classname": "*"}
+      ],
+      "partial_credit": 0.5
+    },
+    {
+      "group_id": "helicopter_to_fgvc_variants",
+      "type": "generic_to_fine",
+      "generic_members": [
+        {"domain": "caltech101", "classname": "helicopter"}
+      ],
+      "members": [
+        {"domain": "fgvc", "classname": "*"}
+      ],
+      "partial_credit": 0.5
+    },
+    {
+      "group_id": "soccer_ball_to_ucf_actions",
+      "type": "generic_to_fine",
+      "generic_members": [
+        {"domain": "caltech101", "classname": "soccer_ball"}
+      ],
+      "fine_members": [
+        {"domain": "ucf101", "classname": "Soccer_Juggling"},
+        {"domain": "ucf101", "classname": "Soccer_Penalty"}
+      ],
+      "partial_credit": 0.5
+    },
+    {
+      "group_id": "lobster_to_food_dishes",
+      "type": "generic_to_fine",
+      "generic_members": [
+        {"domain": "caltech101", "classname": "lobster"}
+      ],
+      "fine_members": [
+        {"domain": "food101", "classname": "lobster_bisque"},
+        {"domain": "food101", "classname": "lobster_roll_sandwich"}
+      ],
+      "partial_credit": 0.5
+    }
+  ]
+}

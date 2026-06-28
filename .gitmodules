@@ -1,0 +1,3 @@
+[submodule "KnOTS"]
+	path = KnOTS
+	url = https://github.com/gstoica27/KnOTS.git

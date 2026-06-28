@@ -1,0 +1,25 @@
+numpy==1.25.2
+scipy==1.11.4
+scikit-learn==1.6.1
+
+torch==2.12.1
+torchvision==0.27.1
+torchaudio==2.11.0
+
+# compatibility pins
+opencv-python-headless
+pyarrow==15.0.2
+img2dataset==1.45.0
+
+open_clip_torch
+gdown
+matplotlib
+pytest
+jupyterlab
+ipywidgets
+braceexpand
+datasets
+webdataset
+pycocotools
+pandas
+openpyxl
