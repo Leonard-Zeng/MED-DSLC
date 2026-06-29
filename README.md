@@ -1,7 +1,5 @@
 # MED-LCDS
 
-Curated MED-LCDS import from `/home/leo/svcl/clip-lora`.
-
 This repository keeps only the training and evaluation path needed to recreate the selected `final_results` experiments:
 
 - `MED`
