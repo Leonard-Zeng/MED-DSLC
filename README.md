@@ -1,4 +1,4 @@
-# MED-LCDS
+# MED-DSLC
 
 This repository keeps only the training and evaluation path needed to recreate the selected `final_results` experiments:
 
@@ -153,6 +153,16 @@ Override artifact roots without changing source:
 ```bash
 DATA_ROOT=/home/leo/data MODEL_ROOT=/path/to/output-rank2/base_split/vitb16 ./train_meta.sh
 WEIGHTS_ROOT=/path/to/final_weights OUT_ROOT=/path/to/final_results ./run_meta_inference.sh
+```
+## BibTeX
+
+```
+@inproceedings{zengeccv26,
+      author = {Zeng, Zheng and Sridhar, Deepak and Vasconcelos, Nuno},
+      title = {MED-DSLC: Multi-Expert-Domain Classification via Domain Supervision and Logit Calibration},
+      booktitle = {European Conference on Computer Vision},
+      year = {2026},
+  }
 ```
 
 ## Acknowledgements
