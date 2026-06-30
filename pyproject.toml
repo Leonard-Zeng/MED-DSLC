@@ -1,7 +1,7 @@
 [project]
-name = "med-lcds"
+name = "med-dslc"
 version = "0.1.0"
-description = "Curated MED-LCDS training and evaluation pipeline."
+description = "Curated MED-DSLC training and evaluation pipeline."
 readme = "README.md"
 requires-python = ">=3.10,<3.11"
 dependencies = [

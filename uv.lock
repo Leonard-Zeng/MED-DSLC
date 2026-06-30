@@ -1337,7 +1337,7 @@ wheels = [
 ]
 
 [[package]]
-name = "med-lcds"
+name = "med-dslc"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [

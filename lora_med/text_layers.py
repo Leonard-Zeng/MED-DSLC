@@ -289,7 +289,7 @@ class TextLinearMED(nn.Linear, TextMEDLayer):
         if self.bayes_F_A is None or self.bayes_F_B is None:
             return A, B
         if apply_bayesian_noise_to_lora is None:
-            raise ImportError("Bayesian MED support is not included in this MED-LCDS import.")
+            raise ImportError("Bayesian MED support is not included in this MED-DSLC import.")
         return apply_bayesian_noise_to_lora(
             A=A,
             B=B,

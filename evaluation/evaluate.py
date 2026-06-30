@@ -314,7 +314,7 @@ class GateDomainCSVLogger:
     def _display_method_name(self) -> str:
         aliases = {
             "MED_standard": "MED",
-            "MED_LCDS_domain-wise": "MED-LCDS",
+            "MED_LCDS_domain-wise": "MED-DSLC",
             "mole_standard": "mole",
         }
         return aliases.get(self.method, self.method)
@@ -713,7 +713,7 @@ def _write_prompts_txt(prompt_output_path: str, prompt_rows: List[Tuple[str, str
 
 
 def _uses_topk_subdir(meta_type: str) -> bool:
-    """Selected MED-LCDS modes do not use top-k checkpoint subdirectories."""
+    """Selected MED-DSLC modes do not use top-k checkpoint subdirectories."""
     return False
 
 
@@ -734,7 +734,7 @@ def _requires_meta_weight_path(meta_type: str) -> bool:
 
 
 def load_meta_weights(meta_type, meta_weight_path, num_experts, device):
-    """Load meta network weights based on selected MED-LCDS meta_type."""
+    """Load meta network weights based on selected MED-DSLC meta_type."""
     if meta_type in (
         "base",
         "base_clip",
@@ -789,7 +789,7 @@ def _create_eval_runner(
     domain_name_by_index: Dict[int, str] | None = None,
     domain_order: List[str] | None = None,
 ) -> Callable[[SimpleNamespace], Tuple[float, Dict]]:
-    """Build an evaluator for the selected MED-LCDS modes."""
+    """Build an evaluator for the selected MED-DSLC modes."""
     domain_order = domain_order or DOMAIN_ORDER
 
     def discover_experts():

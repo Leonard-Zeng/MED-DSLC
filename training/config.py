@@ -1,4 +1,4 @@
-"""Shared configuration for the MED-LCDS training entrypoint."""
+"""Shared configuration for the MED-DSLC training entrypoint."""
 
 from pathlib import Path
 

@@ -167,7 +167,7 @@ def parse_args():
 
 
 def normalize_method_args(args):
-    """Map public MED-LCDS method names onto the shared trainer implementations."""
+    """Map public MED-DSLC method names onto the shared trainer implementations."""
     if args.method == "MED":
         args.mole_mode = "domain_ce"
         args.logit_scalar = "standard"
