@@ -6,7 +6,7 @@ TRAIN_SCRIPT="${TRAIN_SCRIPT:-training/train.py}"
 
 DATA_ROOT="${DATA_ROOT:-./data}"
 MODEL_ROOT="${MODEL_ROOT:-./output-rank2/base_split/vitb16}"
-WEIGHTS_ROOT="${WEIGHTS_ROOT:-final_weights}"
+WEIGHTS_ROOT="${WEIGHTS_ROOT:-trained_weights}"
 META_TYPE="${META_TYPE:-MED}"
 META_CONFIG_PATH="${META_CONFIG_PATH:-}"
 SHOTS="${SHOTS:-16}"

@@ -32,10 +32,13 @@ dist/
 /data/
 /output/
 /output-rank2/
-/final_weights/
-/final_results/
+/trained_weights/
+/results/
 /training/weights/
 /training/logs/
+
+# Generated audit artifacts
+/artifacts/
 
 # Run artifacts
 *.log

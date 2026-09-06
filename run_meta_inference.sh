@@ -6,8 +6,8 @@ EVAL_SCRIPT="${EVAL_SCRIPT:-evaluation/evaluate.py}"
 
 DATA_ROOT="${DATA_ROOT:-./data}"
 MODEL_ROOT="${MODEL_ROOT:-./output-rank2/base_split/vitb16}"
-WEIGHTS_ROOT="${WEIGHTS_ROOT:-final_weights}"
-OUT_ROOT="${OUT_ROOT:-final_results}"
+WEIGHTS_ROOT="${WEIGHTS_ROOT:-trained_weights}"
+OUT_ROOT="${OUT_ROOT:-results}"
 META_TYPE="${META_TYPE:-MED}"
 META_CONFIG_PATH="${META_CONFIG_PATH:-}"
 META_WEIGHT_PATH="${META_WEIGHT_PATH:-}"
@@ -115,7 +115,9 @@ run_eval() {
   if [[ -n "${meta_weight_path}" ]]; then
     cmd+=(--meta_weight_path "${meta_weight_path}")
   fi
-  cmd+=("${extra_args[@]}")
+  if [[ ${#extra_args[@]} -gt 0 ]]; then
+    cmd+=("${extra_args[@]}")
+  fi
 
   echo "[META INFER] method=${META_TYPE} meta_type=${meta_type_arg} mode=${benchmark_mode} subsample=${subsample}"
   "${cmd[@]}"

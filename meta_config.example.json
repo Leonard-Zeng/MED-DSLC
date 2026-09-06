@@ -21,5 +21,5 @@
     "ucf101": "./output-rank2/base_split/vitb16/ucf101/16shots/seed1/lora_weights.pt",
     "fgvc": "./output-rank2/base_split/vitb16/fgvc/16shots/seed1/lora_weights.pt"
   },
-  "meta_weight_path": "./final_weights/MED_standard"
+  "meta_weight_path": "./trained_weights/MED_standard"
 }
