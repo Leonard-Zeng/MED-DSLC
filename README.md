@@ -2,7 +2,7 @@
 
 **Multi-Expert-Domain Classification via Domain Supervision and Logit Calibration**
 
-Zheng Zeng, Deepak Sridhar, and Nuno Vasconcelos · ECCV 2026
+Zheng Zeng*, Deepak Sridhar*, and Nuno Vasconcelos · ECCV 2026
 
 [Paper](https://arxiv.org/abs/2607.10985) · [Project website](https://leonard-zeng.github.io/MED-DSLC/) · [Pretrained weights](https://drive.google.com/file/d/1lgB9s06DUvzqjLSQVekA5Htjm5f6BUdI/view?usp=sharing)
 
